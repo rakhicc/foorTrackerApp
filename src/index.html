@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+  <!--  <link ref="stylesheet" type="text/css" href="dist/snackbar.min.css" /> 
+    <script src="dist/snackbar.min.js"></script>  -->
+</head>
+<body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">My Nutrition</a>
+      
+    </nav>
+
+    <div class="container" id="main">
+        <h2>Add food</h2>
+        <div class="grid">
+            <div id="foodItemlabel">
+                <label for="fooditem">Food name:</label>
+                <select id="menu">
+                    <option value="please select" selected>please select</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="apple">Apple</option>
+                    <option value="ice cream">ice cream</option>
+                    <option value="cake">cake</option>
+                </select>
+            </div>
+            
+        </div>
+       
+
+    </div>
+    <div>
+        <div class="form-group">
+        <label for="carbs">Carbs:</label>
+        <input name="carbs" type="number" placeholder="0g" id="carbs">
+    </div>
+        <div class="form-group">
+        <label for="protein">Protein:</label>
+        <input name="protein" type="number" placeholder="0g" id="protein">
+    </div>
+        <div class="form-group">
+        <label for="fat">Fat:</label>
+        <input name="fat" type="number" placeholder="0g" id="fat">
+    </div>
+    <input type="button" id="addButton" class="btn" value="Add">
+    </div>
+    <!-- <p id="demo"></p> -->
+    <canvas id="myChart" width="800" height="400"></canvas>
+    <div><p id="totalCalories">Total Calories logged: 0</p></div>
+    <div><h2 id="log">Log:</h2></div>
+    <div>
+        <ul id="foodItemsList"></ul></div>
+    <footer id="footer-wrapper">
+       
+    </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script> -->
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
